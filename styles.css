@@ -21,12 +21,22 @@ body {
   font-weight: 700;
 }
 
+.challenge-desc {
+  width: 100%;
+  display: grid;
+  place-items: center;
+  container-name: challange-description;
+  container-type: inline-size;
+}
 
-.challenge-title:link, .challenge-title:visited {
+.challenge-title,
+.challenge-title:visited {
   text-decoration: none;
   color: black;
+  background-color: white;
+  white-space: nowrap;
   font-family: "Bebas Neue";
-  font-size: 4.5rem;
+  font-size: 5.5rem;
   text-align: center;
   font-weight: 200;
   padding: 0.5em;
@@ -38,6 +48,7 @@ body {
     0px 0px 0px hsl(0, 0%, 80%);
   transition:
     transform 200ms ease-out,
+    font-size 200ms,
     text-shadow 500ms ease-out,
     box-shadow 400ms;
 }
@@ -47,6 +58,20 @@ body {
   box-shadow:
     inset 0px 0px 10px hsl(0, 0%, 90%),
     0px 0px 30px hsl(0, 0%, 80%);
+  z-index: 2;
+}
+
+@container challange-description (width < 40rem) {
+  .challenge-title {
+    font-size: 3.5rem;
+  }
+
+  .challenge-title:hover {
+    transform: scale(1.5);
+    box-shadow:
+      inset 0px 0px 10px hsl(0, 0%, 90%),
+      0px 0px 30px hsl(0, 0%, 80%);
+  }
 }
 
 .challenge-title:active {
@@ -59,12 +84,6 @@ body {
     1.5px -1.5px 0 #000,
     -1.5px 1.5px 0 #000,
     1.5px 1.5px 0 #000;
-}
-
-.challenge-desc {
-  width: 100%;
-  display: grid;
-  place-items: center;
 }
 
 iframe {
@@ -82,4 +101,5 @@ iframe {
 iframe:hover {
   transform: scale(1.2);
   box-shadow: 0px 0px 20px hsl(0, 0%, 60%);
+  z-index: 2;
 }
