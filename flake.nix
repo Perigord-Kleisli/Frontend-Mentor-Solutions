@@ -7,6 +7,7 @@
       packages = with nixpkgs.legacyPackages.x86_64-linux; [
         nodePackages.vscode-html-languageserver-bin 
         nodePackages.vscode-css-languageserver-bin
+        nodePackages.prettier
       ];
     };
 

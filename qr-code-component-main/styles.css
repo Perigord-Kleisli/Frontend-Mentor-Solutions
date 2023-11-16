@@ -17,6 +17,7 @@ html, body {
   background-color: white;
   border-radius: 1.5em;
   padding: 1em;
+  box-shadow: 0 5px 25px hsla(0,0%,0%,8%);
 }
 
 .qr-code {
