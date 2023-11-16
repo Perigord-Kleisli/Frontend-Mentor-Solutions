@@ -8,6 +8,9 @@
         nodePackages.vscode-html-languageserver-bin 
         nodePackages.vscode-css-languageserver-bin
         nodePackages.prettier
+        nodePackages.eslint_d
+        nodePackages.eslint
+        nodePackages.typescript-language-server
       ];
     };
 

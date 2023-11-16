@@ -1,0 +1,85 @@
+html,
+body {
+  font-family: "roboto";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #eeeeee;
+}
+
+.challenge-container {
+  padding: 1em;
+  margin: 5em;
+  border-radius: 2em;
+  display: flex;
+  width: 75vw;
+  background-color: white;
+}
+
+.title {
+  font-size: 5rem;
+  font-weight: 700;
+}
+
+
+.challenge-title:link, .challenge-title:visited {
+  text-decoration: none;
+  color: black;
+  font-family: "Bebas Neue";
+  font-size: 4.5rem;
+  text-align: center;
+  font-weight: 200;
+  padding: 0.5em;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 0.3em;
+  box-shadow:
+    inset 0px 0px 0px hsl(0, 0%, 90%),
+    0px 0px 0px hsl(0, 0%, 80%);
+  transition:
+    transform 200ms ease-out,
+    text-shadow 500ms ease-out,
+    box-shadow 400ms;
+}
+
+.challenge-title:hover {
+  transform: scale(1.2);
+  box-shadow:
+    inset 0px 0px 10px hsl(0, 0%, 90%),
+    0px 0px 30px hsl(0, 0%, 80%);
+}
+
+.challenge-title:active {
+  color: white;
+  box-shadow:
+    inset 0px 0px 0px hsl(0, 0%, 90%),
+    0px 0px 0px hsl(0, 0%, 80%);
+  text-shadow:
+    -1.5px -1.5px 0 #000,
+    1.5px -1.5px 0 #000,
+    -1.5px 1.5px 0 #000,
+    1.5px 1.5px 0 #000;
+}
+
+.challenge-desc {
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+iframe {
+  border-radius: 1em;
+  margin: 2em;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 0px 0px 0px hsl(0, 0%, 100%);
+  transition:
+    transform 200ms,
+    box-shadow 400ms;
+}
+
+iframe:hover {
+  transform: scale(1.2);
+  box-shadow: 0px 0px 20px hsl(0, 0%, 60%);
+}
