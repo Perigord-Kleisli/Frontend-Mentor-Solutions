@@ -1,3 +1,3 @@
 # Frontend-Mentor-Solutions
 
-https://github.com/Perigord-Kleisli/Frontend-Mentor-Solutions
+https://perigord-kleisli.github.io/Frontend-Mentor-Solutions/
