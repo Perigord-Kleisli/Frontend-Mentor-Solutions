@@ -1,0 +1,35 @@
+.confirm-container {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-items: flex-start;
+  padding: 3em 5em 3em;
+  row-gap: 2em;
+  max-width: 30em;
+}
+
+.confirm-container p {
+  margin: 0;
+}
+
+.confirm-container h1 {
+  margin-bottom: 0;
+}
+
+.confirm-container img {
+  margin-bottom: 2em;
+}
+
+@media screen and (max-width: 600px) {
+  .confirm-container {
+    padding: 8em 1.5em 2em 1.5em;
+    max-width: 100%;
+  }
+
+  .confirm-container h1 {
+    font-size: 2.5em;
+  }
+
+  .confirm-container .button-container {
+    margin-top: auto;
+  }
+}
