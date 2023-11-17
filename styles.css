@@ -16,9 +16,12 @@ body {
   background-color: white;
 }
 
-.title {
+.title a {
   font-size: 5rem;
   font-weight: 700;
+  cursor: pointer;
+  color: black;
+  text-decoration: none;
 }
 
 .challenge-desc {
